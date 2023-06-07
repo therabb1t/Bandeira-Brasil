@@ -4,4 +4,38 @@
     display: block;
     position: relative;
     background-color: darkgreen;
-  }
+}
+
+#verde #losango:before,
+#verde #losango:after {
+  position: absolute;
+}
+
+#verde #losango {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#verde #losango:before,
+#verde #losango:after {
+  content: '';
+  width: 0;
+  height: 0;
+  left: 20px;
+  right: 20px;
+}
+
+#verde #losango:before {
+  border-left: 105px solid transparent;
+  border-right: 105px solid transparent;
+  border-bottom: 65px solid yellow;
+  top: 10px;
+}
+
+#verde #losango:after {
+  border-left: 105px solid transparent;
+  border-right: 105px solid transparent;
+  border-top: 65px solid yellow;
+  bottom: 10px;
+}
